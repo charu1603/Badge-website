@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+  body {
+  background: #191818;
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    min-height: 100vh;
+  }
+
+
+
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+
+  .input-panel {
+    padding: 24px;
+    width: 25%;
+    max-width: 420px;
+background-color: #292727;
+      color: #fff;
+      min-height: 100%;
+  }
+
+  .input {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input h2{
+    color: #f75656;
+  }
+ 
+ 
+
+  .input:last-child {
+    margin-bottom: 0;
+  }
+
+  .input label {
+ 
+    margin-bottom: 18px;
+    margin-top: 18px;
+    
+  }
+
+  
+  .button {
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px 12px;
+     background-color: #f53737;
+    cursor: pointer;
+    border: none;
+   
+  }
+
+  .button:hover {
+   
+    background-color: #fff;
+    color: #f03838;
+  }
+
+  input.category-input {
+    font-size: 15px;
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  input.category-input:focus {
+    outline: none;
+    border-color: #8e8e8e;
+  }
+
+  .select-container {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+    overflow: hidden;
+  }
+
+  .select-container .select {
+    background-color: #fff;
+    padding: 6px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 100ms ease;
+  }
+
+  .select-container .select:not(:last-child) {
+    border-right: 1px solid #cacaca;
+  }
+
+  .select-container .select[selected] {
+    color: #fff;
+   
+  }
+
+  .preview-panel {
+    padding: 36px 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+  }
+
+  canvas {
+    width: 500px;
+    max-width: 50%;
+    border-radius: 20px;
+  }
+
+  .download-fab {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: rgb(225, 37, 37);
+   
+  }
+
+
+
+  @media screen and (max-width: 860px) {
+    header {
+      height: 56px;
+      font-size: 20px;
+    }
+    canvas{
+        width: 600px;
+        max-width: 75%;
+    }
+    .main-container {
+      flex-direction: column;
+    }
+    .input-panel,
+    .preview-panel {
+      width: 100%;
+      max-width: initial;
+    }
+    .preview-panel {
+      padding: 24px 0 96px 0;
+      flex: 1;
+    }
+    .input {
+      margin-bottom: 24px;
+    }
+    .download-fab {
+      width: 56px;
+      height: 56px;
+    }
+  
+  }
